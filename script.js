@@ -9,7 +9,7 @@ return word.replace(regex, '').trim();
 const sortedBands = bands.sort((a, b) => (strip(a) > strip(b)) ? 1 : -1);
 
     // Display sorted bands in the unordered list
-    const bandList = document.getElementById('band');
+    const bandList = document.getElementById('bands');
     sortedBands.forEach(band => {
       const listItem = document.createElement('li');
       listItem.textContent = band;
